@@ -1,0 +1,222 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: #000000f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  justify-content: flex-end;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+  margin-right: auto;
+}
+
+#logo img {
+  height: 59px;
+  margin: -5px -10px;
+  background-color: white;
+  border-radius: 60px;
+  object-fit: contain;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul:hover li a {
+  color: #30edf4;
+}
+#navbar ul:hover li a:not(:hover) {
+  color: white;
+  opacity: 0.3;
+  filter: blur(1px);
+}
+/* Home section */
+#home {
+  background: url(./Bg/background.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  align-items: center;
+  justify-content: center;
+  height: 636px;
+}
+#home h1 {
+  color: rgb(97, 250, 2);
+  text-align: center;
+}
+#home p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Services */
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 55px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  border-inline: 5px solid;
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    red,
+    orange,
+    rgba(0, 0, 0, 0)
+  );
+  border-image-slice: 1;
+}
+
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* client-section */
+
+#client-section {
+  position: relative;
+  background: url("./photos/bg1.jpeg") no-repeat center center/cover;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 34px;
+}
+
+#clients img {
+  padding: 34px;
+  height: 124px;
+}
+
+/* contact */
+
+#contact {
+  position: relative;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai", cursive;
+}
+#contact-section {
+  background-color: #eaeaea;
+}
+
+/* Footer */
+.footer-section {
+  background: #404040;
+  color: white;
+  padding: 9px 20px;
+  display: flex;
+  align-items: center;
+  height: 58px;
+  font-weight: bold;
+}
+/* utility classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid rgb(18, 17, 17);
+  background-color: rgb(93, 145, 248);
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: white;
+  background-color: red;
+}
+.h-secondary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.button{
+  padding: 6px 20px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(209, 35, 35);
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: lightcyan;
+}
+ 
